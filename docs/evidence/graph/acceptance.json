@@ -1,0 +1,900 @@
+{
+  "annotation": [
+    {
+      "annotation_id": "indpensim:pdnjz7zz5x:v2:batch:091:annotation:published_fault_present",
+      "annotation_kind": "published_batch_fault_presence",
+      "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+      "batch_ref": 91,
+      "fault_present": true,
+      "source_archive_sha256": "bc434c6cf96444fee3c915d434ac84e2a9c6492be4daebcfa4aed9cdff181f00",
+      "source_column_index": 4,
+      "source_file_id": "indpensim:pdnjz7zz5x:v2:statistics",
+      "source_header": "Fault ref(0-NoFault 1-Fault)",
+      "source_member_path": "Mendeley_data/100_Batches_IndPenSim_Statistics.csv",
+      "source_row_number": 91
+    }
+  ],
+  "annotation_counts": {
+    "false": 90,
+    "total": 100,
+    "true": 10
+  },
+  "artifact_sha256": "3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+  "before_first_load": {
+    "nodes": {
+      "Batch": 0,
+      "Dataset": 0,
+      "FaultAnnotation": 0,
+      "ProcessedArtifact": 0,
+      "SourceFile": 0,
+      "Variable": 0
+    },
+    "relationships": {
+      "DERIVED_FROM": 0,
+      "FROM_SOURCE": 0,
+      "HAS_ANNOTATION": 0,
+      "HAS_ARTIFACT": 0,
+      "HAS_BATCH": 0,
+      "HAS_DATA": 0,
+      "HAS_SOURCE": 0,
+      "HAS_VARIABLE": 0
+    },
+    "total_nodes": 0,
+    "total_relationships": 0
+  },
+  "commands": [
+    {
+      "command": ".venv/bin/python scripts/load_graph.py",
+      "elapsed_s": 2.145,
+      "exit_code": 0,
+      "result": {
+        "actual_counts": {
+          "nodes": {
+            "Batch": 100,
+            "Dataset": 1,
+            "FaultAnnotation": 100,
+            "ProcessedArtifact": 3,
+            "SourceFile": 2,
+            "Variable": 33
+          },
+          "relationships": {
+            "DERIVED_FROM": 4,
+            "FROM_SOURCE": 233,
+            "HAS_ANNOTATION": 100,
+            "HAS_ARTIFACT": 3,
+            "HAS_BATCH": 100,
+            "HAS_DATA": 233,
+            "HAS_SOURCE": 2,
+            "HAS_VARIABLE": 33
+          },
+          "total_nodes": 239,
+          "total_relationships": 708
+        },
+        "dataset_id": "indpensim:pdnjz7zz5x:v2",
+        "expected_counts": {
+          "nodes": {
+            "Batch": 100,
+            "Dataset": 1,
+            "FaultAnnotation": 100,
+            "ProcessedArtifact": 3,
+            "SourceFile": 2,
+            "Variable": 33
+          },
+          "relationships": {
+            "DERIVED_FROM": 4,
+            "FROM_SOURCE": 233,
+            "HAS_ANNOTATION": 100,
+            "HAS_ARTIFACT": 3,
+            "HAS_BATCH": 100,
+            "HAS_DATA": 233,
+            "HAS_SOURCE": 2,
+            "HAS_VARIABLE": 33
+          },
+          "total_nodes": 239,
+          "total_relationships": 708
+        },
+        "integrity": {
+          "duplicate_ids": {
+            "Batch": 0,
+            "Dataset": 0,
+            "FaultAnnotation": 0,
+            "ProcessedArtifact": 0,
+            "SourceFile": 0,
+            "Variable": 0
+          },
+          "errors": [],
+          "invalid_entities": 0,
+          "missing_relationships": {
+            "DERIVED_FROM": 0,
+            "FROM_SOURCE": 0,
+            "HAS_ANNOTATION": 0,
+            "HAS_ARTIFACT": 0,
+            "HAS_BATCH": 0,
+            "HAS_DATA": 0,
+            "HAS_SOURCE": 0,
+            "HAS_VARIABLE": 0
+          },
+          "ok": true,
+          "unexpected_relationships": 0
+        },
+        "manifest_sha256": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+        "status": "complete"
+      }
+    },
+    {
+      "command": ".venv/bin/python scripts/load_graph.py",
+      "elapsed_s": 0.951,
+      "exit_code": 0,
+      "result": {
+        "actual_counts": {
+          "nodes": {
+            "Batch": 100,
+            "Dataset": 1,
+            "FaultAnnotation": 100,
+            "ProcessedArtifact": 3,
+            "SourceFile": 2,
+            "Variable": 33
+          },
+          "relationships": {
+            "DERIVED_FROM": 4,
+            "FROM_SOURCE": 233,
+            "HAS_ANNOTATION": 100,
+            "HAS_ARTIFACT": 3,
+            "HAS_BATCH": 100,
+            "HAS_DATA": 233,
+            "HAS_SOURCE": 2,
+            "HAS_VARIABLE": 33
+          },
+          "total_nodes": 239,
+          "total_relationships": 708
+        },
+        "dataset_id": "indpensim:pdnjz7zz5x:v2",
+        "expected_counts": {
+          "nodes": {
+            "Batch": 100,
+            "Dataset": 1,
+            "FaultAnnotation": 100,
+            "ProcessedArtifact": 3,
+            "SourceFile": 2,
+            "Variable": 33
+          },
+          "relationships": {
+            "DERIVED_FROM": 4,
+            "FROM_SOURCE": 233,
+            "HAS_ANNOTATION": 100,
+            "HAS_ARTIFACT": 3,
+            "HAS_BATCH": 100,
+            "HAS_DATA": 233,
+            "HAS_SOURCE": 2,
+            "HAS_VARIABLE": 33
+          },
+          "total_nodes": 239,
+          "total_relationships": 708
+        },
+        "integrity": {
+          "duplicate_ids": {
+            "Batch": 0,
+            "Dataset": 0,
+            "FaultAnnotation": 0,
+            "ProcessedArtifact": 0,
+            "SourceFile": 0,
+            "Variable": 0
+          },
+          "errors": [],
+          "invalid_entities": 0,
+          "missing_relationships": {
+            "DERIVED_FROM": 0,
+            "FROM_SOURCE": 0,
+            "HAS_ANNOTATION": 0,
+            "HAS_ARTIFACT": 0,
+            "HAS_BATCH": 0,
+            "HAS_DATA": 0,
+            "HAS_SOURCE": 0,
+            "HAS_VARIABLE": 0
+          },
+          "ok": true,
+          "unexpected_relationships": 0
+        },
+        "manifest_sha256": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+        "status": "complete"
+      }
+    },
+    {
+      "command": ".venv/bin/python scripts/query_graph.py counts",
+      "elapsed_s": 0.106,
+      "exit_code": 0,
+      "result": {
+        "nodes": {
+          "Batch": 100,
+          "Dataset": 1,
+          "FaultAnnotation": 100,
+          "ProcessedArtifact": 3,
+          "SourceFile": 2,
+          "Variable": 33
+        },
+        "relationships": {
+          "DERIVED_FROM": 4,
+          "FROM_SOURCE": 233,
+          "HAS_ANNOTATION": 100,
+          "HAS_ARTIFACT": 3,
+          "HAS_BATCH": 100,
+          "HAS_DATA": 233,
+          "HAS_SOURCE": 2,
+          "HAS_VARIABLE": 33
+        },
+        "total_nodes": 239,
+        "total_relationships": 708
+      }
+    },
+    {
+      "command": ".venv/bin/python scripts/query_graph.py check",
+      "elapsed_s": 0.138,
+      "exit_code": 0,
+      "result": {
+        "duplicate_ids": {
+          "Batch": 0,
+          "Dataset": 0,
+          "FaultAnnotation": 0,
+          "ProcessedArtifact": 0,
+          "SourceFile": 0,
+          "Variable": 0
+        },
+        "errors": [],
+        "invalid_entities": 0,
+        "missing_relationships": {
+          "DERIVED_FROM": 0,
+          "FROM_SOURCE": 0,
+          "HAS_ANNOTATION": 0,
+          "HAS_ARTIFACT": 0,
+          "HAS_BATCH": 0,
+          "HAS_DATA": 0,
+          "HAS_SOURCE": 0,
+          "HAS_VARIABLE": 0
+        },
+        "ok": true,
+        "unexpected_relationships": 0
+      }
+    },
+    {
+      "command": ".venv/bin/python scripts/query_graph.py batches",
+      "elapsed_s": 0.158,
+      "exit_code": 0,
+      "result": {
+        "first_row": {
+          "batch_id": "indpensim:pdnjz7zz5x:v2:batch:001",
+          "batch_ref": 1,
+          "sample_count": 1130,
+          "time_end_h": 226.0,
+          "time_start_h": 0.2
+        },
+        "rows": 100
+      }
+    },
+    {
+      "command": ".venv/bin/python scripts/query_graph.py variables",
+      "elapsed_s": 0.135,
+      "exit_code": 0,
+      "result": {
+        "first_row": {
+          "dataset_id": "indpensim:pdnjz7zz5x:v2",
+          "measurement_kind": "process_value",
+          "output_column": "aeration_rate",
+          "output_table": "samples",
+          "source_column_index": 1,
+          "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+          "source_header": "Aeration rate(Fg:L/h)",
+          "unit_reported": "L/h",
+          "unit_status": "reported_only",
+          "variable_id": "indpensim:pdnjz7zz5x:v2:variable:aeration_rate"
+        },
+        "rows": 30
+      }
+    },
+    {
+      "command": ".venv/bin/python scripts/query_graph.py batch-variables --batch-ref 91",
+      "elapsed_s": 0.449,
+      "exit_code": 0,
+      "result": {
+        "first_row": {
+          "artifact_filename": "samples.parquet",
+          "artifact_id": "indpensim:pdnjz7zz5x:v2:artifact:samples.parquet:sha256:3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+          "artifact_sha256": "3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+          "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+          "batch_ref": 91,
+          "cache_key": "45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7",
+          "dataset_id": "indpensim:pdnjz7zz5x:v2",
+          "manifest_sha256": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+          "measurement_kind": "process_value",
+          "output_column": "aeration_rate",
+          "output_table": "samples",
+          "sample_count": 1290,
+          "source_archive_sha256": "bc434c6cf96444fee3c915d434ac84e2a9c6492be4daebcfa4aed9cdff181f00",
+          "source_column_index": 1,
+          "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+          "source_header": "Aeration rate(Fg:L/h)",
+          "source_member_path": "Mendeley_data/100_Batches_IndPenSim_V3.csv",
+          "source_row_number": null,
+          "time_end_h": 258.0,
+          "time_start_h": 0.2,
+          "timeseries_first_source_row": 102411,
+          "timeseries_last_source_row": 103700,
+          "unit_reported": "L/h",
+          "unit_status": "reported_only",
+          "variable_id": "indpensim:pdnjz7zz5x:v2:variable:aeration_rate"
+        },
+        "rows": 30
+      }
+    },
+    {
+      "command": ".venv/bin/python scripts/query_graph.py reference --batch-ref 91 --variable ph",
+      "elapsed_s": 0.326,
+      "exit_code": 0,
+      "result": {
+        "artifact_filename": "samples.parquet",
+        "artifact_id": "indpensim:pdnjz7zz5x:v2:artifact:samples.parquet:sha256:3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+        "artifact_sha256": "3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "batch_ref": 91,
+        "cache_key": "45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7",
+        "dataset_id": "indpensim:pdnjz7zz5x:v2",
+        "manifest_sha256": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+        "measurement_kind": "process_value",
+        "output_column": "ph",
+        "output_table": "samples",
+        "sample_count": 1290,
+        "source_archive_sha256": "bc434c6cf96444fee3c915d434ac84e2a9c6492be4daebcfa4aed9cdff181f00",
+        "source_column_index": 16,
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_header": "pH(pH:pH)",
+        "source_member_path": "Mendeley_data/100_Batches_IndPenSim_V3.csv",
+        "source_row_number": null,
+        "time_end_h": 258.0,
+        "time_start_h": 0.2,
+        "timeseries_first_source_row": 102411,
+        "timeseries_last_source_row": 103700,
+        "unit_reported": "pH",
+        "unit_status": "reported_only",
+        "variable_id": "indpensim:pdnjz7zz5x:v2:variable:ph"
+      }
+    },
+    {
+      "command": ".venv/bin/python scripts/query_graph.py measurements --batch-ref 91 --variable ph --start-tick 95 --end-tick 105 --limit 20",
+      "elapsed_s": 0.833,
+      "exit_code": 0,
+      "result": {
+        "measurements": [
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000095",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102505,
+            "time_h": 19.0,
+            "time_tick": 95,
+            "value": 6.4956
+          },
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000096",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102506,
+            "time_h": 19.2,
+            "time_tick": 96,
+            "value": 6.4994
+          },
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000097",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102507,
+            "time_h": 19.4,
+            "time_tick": 97,
+            "value": 6.5045
+          },
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000098",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102508,
+            "time_h": 19.6,
+            "time_tick": 98,
+            "value": 6.509
+          },
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000099",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102509,
+            "time_h": 19.8,
+            "time_tick": 99,
+            "value": 6.5104
+          },
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000100",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102510,
+            "time_h": 20.0,
+            "time_tick": 100,
+            "value": 6.539
+          },
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000101",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102511,
+            "time_h": 20.2,
+            "time_tick": 101,
+            "value": 6.555
+          },
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000102",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102512,
+            "time_h": 20.4,
+            "time_tick": 102,
+            "value": 6.5422
+          },
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000103",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102513,
+            "time_h": 20.6,
+            "time_tick": 103,
+            "value": 6.5075
+          },
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000104",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102514,
+            "time_h": 20.8,
+            "time_tick": 104,
+            "value": 6.4726
+          },
+          {
+            "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+            "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000105",
+            "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+            "source_row_number": 102515,
+            "time_h": 21.0,
+            "time_tick": 105,
+            "value": 6.4563
+          }
+        ],
+        "reference": {
+          "artifact_filename": "samples.parquet",
+          "artifact_id": "indpensim:pdnjz7zz5x:v2:artifact:samples.parquet:sha256:3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+          "artifact_sha256": "3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+          "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+          "batch_ref": 91,
+          "cache_key": "45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7",
+          "dataset_id": "indpensim:pdnjz7zz5x:v2",
+          "manifest_sha256": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+          "measurement_kind": "process_value",
+          "output_column": "ph",
+          "output_table": "samples",
+          "sample_count": 1290,
+          "source_archive_sha256": "bc434c6cf96444fee3c915d434ac84e2a9c6492be4daebcfa4aed9cdff181f00",
+          "source_column_index": 16,
+          "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+          "source_header": "pH(pH:pH)",
+          "source_member_path": "Mendeley_data/100_Batches_IndPenSim_V3.csv",
+          "source_row_number": null,
+          "time_end_h": 258.0,
+          "time_start_h": 0.2,
+          "timeseries_first_source_row": 102411,
+          "timeseries_last_source_row": 103700,
+          "unit_reported": "pH",
+          "unit_status": "reported_only",
+          "variable_id": "indpensim:pdnjz7zz5x:v2:variable:ph"
+        }
+      }
+    },
+    {
+      "command": ".venv/bin/python scripts/query_graph.py annotations --batch-ref 91",
+      "elapsed_s": 0.136,
+      "exit_code": 0,
+      "result": [
+        {
+          "annotation_id": "indpensim:pdnjz7zz5x:v2:batch:091:annotation:published_fault_present",
+          "annotation_kind": "published_batch_fault_presence",
+          "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+          "batch_ref": 91,
+          "fault_present": true,
+          "source_archive_sha256": "bc434c6cf96444fee3c915d434ac84e2a9c6492be4daebcfa4aed9cdff181f00",
+          "source_column_index": 4,
+          "source_file_id": "indpensim:pdnjz7zz5x:v2:statistics",
+          "source_header": "Fault ref(0-NoFault 1-Fault)",
+          "source_member_path": "Mendeley_data/100_Batches_IndPenSim_Statistics.csv",
+          "source_row_number": 91
+        }
+      ]
+    }
+  ],
+  "constraints": [
+    {
+      "labelsOrTypes": [
+        "Batch"
+      ],
+      "name": "pharmagraph_batch_id",
+      "properties": [
+        "batch_id"
+      ],
+      "type": "UNIQUENESS"
+    },
+    {
+      "labelsOrTypes": [
+        "Dataset"
+      ],
+      "name": "pharmagraph_dataset_id",
+      "properties": [
+        "dataset_id"
+      ],
+      "type": "UNIQUENESS"
+    },
+    {
+      "labelsOrTypes": [
+        "FaultAnnotation"
+      ],
+      "name": "pharmagraph_faultannotation_id",
+      "properties": [
+        "annotation_id"
+      ],
+      "type": "UNIQUENESS"
+    },
+    {
+      "labelsOrTypes": [
+        "ProcessedArtifact"
+      ],
+      "name": "pharmagraph_processedartifact_id",
+      "properties": [
+        "artifact_id"
+      ],
+      "type": "UNIQUENESS"
+    },
+    {
+      "labelsOrTypes": [
+        "SourceFile"
+      ],
+      "name": "pharmagraph_sourcefile_id",
+      "properties": [
+        "source_file_id"
+      ],
+      "type": "UNIQUENESS"
+    },
+    {
+      "labelsOrTypes": [
+        "Variable"
+      ],
+      "name": "pharmagraph_variable_id",
+      "properties": [
+        "variable_id"
+      ],
+      "type": "UNIQUENESS"
+    }
+  ],
+  "detector_results_exclude_annotations_and_raw_flags": true,
+  "docker_blocker": {
+    "commands": [
+      "docker --version",
+      "docker compose version"
+    ],
+    "exit_code": 127,
+    "stderr": "zsh:1: command not found: docker",
+    "unverified": [
+      "Compose startup",
+      "container healthcheck",
+      "named-volume persistence",
+      "container restart"
+    ]
+  },
+  "environment": {
+    "docker_available": false,
+    "java": "Amazon Corretto 21.0.13.0.11 (build 21.0.13+11-LTS)",
+    "neo4j_driver": "5.28.2",
+    "pyarrow": "21.0.0",
+    "python": "3.11.17",
+    "runtime": "standalone Neo4j Community 5.26.32, Amazon Corretto Java 21, macOS arm64"
+  },
+  "expected_from_processed": {
+    "nodes": {
+      "Batch": 100,
+      "Dataset": 1,
+      "FaultAnnotation": 100,
+      "ProcessedArtifact": 3,
+      "SourceFile": 2,
+      "Variable": 33
+    },
+    "relationships": {
+      "DERIVED_FROM": 4,
+      "FROM_SOURCE": 233,
+      "HAS_ANNOTATION": 100,
+      "HAS_ARTIFACT": 3,
+      "HAS_BATCH": 100,
+      "HAS_DATA": 233,
+      "HAS_SOURCE": 2,
+      "HAS_VARIABLE": 33
+    },
+    "total_nodes": 239,
+    "total_relationships": 708
+  },
+  "first_load_counts": {
+    "nodes": {
+      "Batch": 100,
+      "Dataset": 1,
+      "FaultAnnotation": 100,
+      "ProcessedArtifact": 3,
+      "SourceFile": 2,
+      "Variable": 33
+    },
+    "relationships": {
+      "DERIVED_FROM": 4,
+      "FROM_SOURCE": 233,
+      "HAS_ANNOTATION": 100,
+      "HAS_ARTIFACT": 3,
+      "HAS_BATCH": 100,
+      "HAS_DATA": 233,
+      "HAS_SOURCE": 2,
+      "HAS_VARIABLE": 33
+    },
+    "total_nodes": 239,
+    "total_relationships": 708
+  },
+  "ingestion_sha256": "306f3e7b70fefd8645a9951c2a973943f73fb7e4756c96ed160c7f09a47790d6",
+  "integrity": {
+    "duplicate_ids": {
+      "Batch": 0,
+      "Dataset": 0,
+      "FaultAnnotation": 0,
+      "ProcessedArtifact": 0,
+      "SourceFile": 0,
+      "Variable": 0
+    },
+    "errors": [],
+    "invalid_entities": 0,
+    "missing_relationships": {
+      "DERIVED_FROM": 0,
+      "FROM_SOURCE": 0,
+      "HAS_ANNOTATION": 0,
+      "HAS_ARTIFACT": 0,
+      "HAS_BATCH": 0,
+      "HAS_DATA": 0,
+      "HAS_SOURCE": 0,
+      "HAS_VARIABLE": 0
+    },
+    "ok": true,
+    "unexpected_relationships": 0
+  },
+  "lookup": {
+    "measurements": [
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000095",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102505,
+        "time_h": 19.0,
+        "time_tick": 95,
+        "value": 6.4956
+      },
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000096",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102506,
+        "time_h": 19.2,
+        "time_tick": 96,
+        "value": 6.4994
+      },
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000097",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102507,
+        "time_h": 19.4,
+        "time_tick": 97,
+        "value": 6.5045
+      },
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000098",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102508,
+        "time_h": 19.6,
+        "time_tick": 98,
+        "value": 6.509
+      },
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000099",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102509,
+        "time_h": 19.8,
+        "time_tick": 99,
+        "value": 6.5104
+      },
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000100",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102510,
+        "time_h": 20.0,
+        "time_tick": 100,
+        "value": 6.539
+      },
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000101",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102511,
+        "time_h": 20.2,
+        "time_tick": 101,
+        "value": 6.555
+      },
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000102",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102512,
+        "time_h": 20.4,
+        "time_tick": 102,
+        "value": 6.5422
+      },
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000103",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102513,
+        "time_h": 20.6,
+        "time_tick": 103,
+        "value": 6.5075
+      },
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000104",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102514,
+        "time_h": 20.8,
+        "time_tick": 104,
+        "value": 6.4726
+      },
+      {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:091:tick:000105",
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_row_number": 102515,
+        "time_h": 21.0,
+        "time_tick": 105,
+        "value": 6.4563
+      }
+    ],
+    "reference": {
+      "artifact_filename": "samples.parquet",
+      "artifact_id": "indpensim:pdnjz7zz5x:v2:artifact:samples.parquet:sha256:3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+      "artifact_sha256": "3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+      "batch_id": "indpensim:pdnjz7zz5x:v2:batch:091",
+      "batch_ref": 91,
+      "cache_key": "45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7",
+      "dataset_id": "indpensim:pdnjz7zz5x:v2",
+      "manifest_sha256": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+      "measurement_kind": "process_value",
+      "output_column": "ph",
+      "output_table": "samples",
+      "sample_count": 1290,
+      "source_archive_sha256": "bc434c6cf96444fee3c915d434ac84e2a9c6492be4daebcfa4aed9cdff181f00",
+      "source_column_index": 16,
+      "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+      "source_header": "pH(pH:pH)",
+      "source_member_path": "Mendeley_data/100_Batches_IndPenSim_V3.csv",
+      "source_row_number": null,
+      "time_end_h": 258.0,
+      "time_start_h": 0.2,
+      "timeseries_first_source_row": 102411,
+      "timeseries_last_source_row": 103700,
+      "unit_reported": "pH",
+      "unit_status": "reported_only",
+      "variable_id": "indpensim:pdnjz7zz5x:v2:variable:ph"
+    }
+  },
+  "manifest_sha256": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+  "restart": {
+    "container_restart": "not run: Docker executable/runtime unavailable",
+    "counts_after_restart": {
+      "nodes": {
+        "Batch": 100,
+        "Dataset": 1,
+        "FaultAnnotation": 100,
+        "ProcessedArtifact": 3,
+        "SourceFile": 2,
+        "Variable": 33
+      },
+      "relationships": {
+        "DERIVED_FROM": 4,
+        "FROM_SOURCE": 233,
+        "HAS_ANNOTATION": 100,
+        "HAS_ARTIFACT": 3,
+        "HAS_BATCH": 100,
+        "HAS_DATA": 233,
+        "HAS_SOURCE": 2,
+        "HAS_VARIABLE": 33
+      },
+      "total_nodes": 239,
+      "total_relationships": 708
+    },
+    "integrity": {
+      "duplicate_ids": {
+        "Batch": 0,
+        "Dataset": 0,
+        "FaultAnnotation": 0,
+        "ProcessedArtifact": 0,
+        "SourceFile": 0,
+        "Variable": 0
+      },
+      "errors": [],
+      "invalid_entities": 0,
+      "missing_relationships": {
+        "DERIVED_FROM": 0,
+        "FROM_SOURCE": 0,
+        "HAS_ANNOTATION": 0,
+        "HAS_ARTIFACT": 0,
+        "HAS_BATCH": 0,
+        "HAS_DATA": 0,
+        "HAS_SOURCE": 0,
+        "HAS_VARIABLE": 0
+      },
+      "ok": true,
+      "unexpected_relationships": 0
+    },
+    "lookup_unchanged_after_restart": true,
+    "standalone_process_restart": "passed"
+  },
+  "runtime_downloads": {
+    "java_sha256": "f4ee9236ffc3ddcd37da877e04a1ab74b3d3376cf9e4287b5426f4749cc869a9",
+    "neo4j_sha256": "d279ae6a9b38034280681a558b0cd222dce89f87cc3d9867f1f7bd28ef5ebc30"
+  },
+  "second_load_counts": {
+    "nodes": {
+      "Batch": 100,
+      "Dataset": 1,
+      "FaultAnnotation": 100,
+      "ProcessedArtifact": 3,
+      "SourceFile": 2,
+      "Variable": 33
+    },
+    "relationships": {
+      "DERIVED_FROM": 4,
+      "FROM_SOURCE": 233,
+      "HAS_ANNOTATION": 100,
+      "HAS_ARTIFACT": 3,
+      "HAS_BATCH": 100,
+      "HAS_DATA": 233,
+      "HAS_SOURCE": 2,
+      "HAS_VARIABLE": 33
+    },
+    "total_nodes": 239,
+    "total_relationships": 708
+  },
+  "server": [
+    {
+      "edition": "community",
+      "name": "Neo4j Kernel",
+      "versions": [
+        "5.26.32"
+      ]
+    }
+  ],
+  "source_traceability_verified_against_parquet": true,
+  "stable_node_element_ids_after_second_load": true,
+  "tests": {
+    "command": "PHARMAGRAPH_NEO4J_INTEGRATION=1 .venv/bin/python -m unittest discover -s tests -v",
+    "elapsed_s": 3.662,
+    "exit_code": 0,
+    "ingestion_regression": 22,
+    "offline_graph": 15,
+    "passed": 46,
+    "real_neo4j_integration": 9,
+    "skipped": 0,
+    "total": 46
+  }
+}

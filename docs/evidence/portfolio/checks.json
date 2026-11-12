@@ -1,0 +1,109 @@
+{
+  "cached_ingestion_check": {
+    "command": ".venv/bin/python scripts/ingest_indpensim.py",
+    "exit_code": 0,
+    "status": "cached"
+  },
+  "documented_data_download_api": {
+    "checked": "Documented curl/Accept-header request resolved official API; plain Python urllib GET returned HTTP403; archive not redownloaded; official object HEAD returned HTTP200 and 503792426bytes",
+    "status": "OK"
+  },
+  "documented_runtime_hashes_match_tested_downloads": true,
+  "files_changed": [
+    "README.md",
+    ".gitignore",
+    "docs/architecture.md",
+    "docs/architecture_detailed.md",
+    "docs/demo_walkthrough.md",
+    "docs/evidence/README.md",
+    "docs/evidence/indpensim/ingestion_acceptance.json",
+    "docs/portfolio_validation.md",
+    "docs/evidence/portfolio/checks.json",
+    "docs/evidence/portfolio/test_results.txt"
+  ],
+  "graph_counts": {
+    "nodes": {
+      "Batch": 100,
+      "Dataset": 1,
+      "FaultAnnotation": 100,
+      "ProcessedArtifact": 3,
+      "SourceFile": 2,
+      "Variable": 33
+    },
+    "relationships": {
+      "DERIVED_FROM": 4,
+      "FROM_SOURCE": 233,
+      "HAS_ANNOTATION": 100,
+      "HAS_ARTIFACT": 3,
+      "HAS_BATCH": 100,
+      "HAS_DATA": 233,
+      "HAS_SOURCE": 2,
+      "HAS_VARIABLE": 33
+    },
+    "total_nodes": 239,
+    "total_relationships": 708
+  },
+  "graph_integrity": {
+    "duplicate_ids": {
+      "Batch": 0,
+      "Dataset": 0,
+      "FaultAnnotation": 0,
+      "ProcessedArtifact": 0,
+      "SourceFile": 0,
+      "Variable": 0
+    },
+    "errors": [],
+    "invalid_entities": 0,
+    "missing_relationships": {
+      "DERIVED_FROM": 0,
+      "FROM_SOURCE": 0,
+      "HAS_ANNOTATION": 0,
+      "HAS_ARTIFACT": 0,
+      "HAS_BATCH": 0,
+      "HAS_DATA": 0,
+      "HAS_SOURCE": 0,
+      "HAS_VARIABLE": 0
+    },
+    "ok": true,
+    "unexpected_relationships": 0
+  },
+  "hygiene": {
+    ".env.example": "placeholder confirmed, not ignored",
+    "candidate_files_scanned": 61,
+    "credential_or_personal_path_findings": [],
+    "git_state": "No tracked files at audit time; unignored candidate files scanned. Nothing staged or committed. No data deleted or history rewritten.",
+    "ignore_cases_passed": 13,
+    "tracked_files": 0
+  },
+  "implementation_tests_contract_and_dependencies_unchanged": true,
+  "local_links_and_anchors": {
+    "checked": 42,
+    "passed": true
+  },
+  "readme_command_syntax": {
+    "boundary": "Parsed commands and compared CLI help/config; no clean-host setup was executed",
+    "passed": true,
+    "python_snippets": 3,
+    "shell_blocks": 10
+  },
+  "scope": "Documentation, architectural explanation and ignore rules only; feature scope frozen",
+  "streamlit_health": {
+    "body": "ok",
+    "status": 200
+  },
+  "tests": {
+    "command": "PHARMAGRAPH_NEO4J_INTEGRATION=1 .venv/bin/python -m unittest discover -s tests -v",
+    "elapsed_s": 18.453,
+    "exit_code": 0,
+    "passed": 89,
+    "skipped": 0,
+    "total": 89
+  },
+  "unverified": [
+    "Fresh clean-host installation of relocated standalone recipe",
+    "Browser visual layout and hover/zoom",
+    "Actual browser-triggered file save and screenshots (Chrome permission denied)",
+    "Docker Compose runtime/healthcheck/volume/container restart",
+    "Accuracy, fault diagnosis, quality outcomes and production validation"
+  ]
+}

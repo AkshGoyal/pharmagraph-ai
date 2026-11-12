@@ -1,0 +1,197 @@
+{
+  "verified_date": "2026-10-30",
+  "python_version": "3.11.17",
+  "pyarrow_version": "21.0.0",
+  "contract_sha256": "be26f9704862035ca5bbfdfab48bb69d3e0ace1e459e1a830b51c1c951f252ac",
+  "normalizer_sha256": "306f3e7b70fefd8645a9951c2a973943f73fb7e4756c96ed160c7f09a47790d6",
+  "runs": [
+    {
+      "run": "first",
+      "command": ".venv/bin/python scripts/ingest_indpensim.py",
+      "elapsed_seconds": 14.905,
+      "exit_code": 0,
+      "stdout": "{\"cache_key\": \"45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7\", \"cache_miss_reason\": \"manifest missing\", \"manifest_path\": \"<repo>/data/processed/indpensim/manifest.json\", \"status\": \"built\"}\n",
+      "stderr": "/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted\n",
+      "status": {
+        "cache_key": "45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7",
+        "cache_miss_reason": "manifest missing",
+        "manifest_path": "<repo>/data/processed/indpensim/manifest.json",
+        "status": "built"
+      },
+      "outputs": {
+        "batches.parquet": {
+          "sha256": "aa760562a140e033f84ab699ad4f151e51eb4ee19bb4ce5aca908a2e94dac4da",
+          "bytes": 6930,
+          "mtime_ns": 1793307851284934312
+        },
+        "manifest.json": {
+          "sha256": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+          "bytes": 11266,
+          "mtime_ns": 1793307851540909591
+        },
+        "samples.parquet": {
+          "sha256": "3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+          "bytes": 6900852,
+          "mtime_ns": 1793307851356598468
+        },
+        "variables.parquet": {
+          "sha256": "860bad3baa9c0b5c07a85d23bcf90fb83fa6bcc684b61280b96ed2c1104a5781",
+          "bytes": 4752,
+          "mtime_ns": 1793307851368689523
+        }
+      }
+    },
+    {
+      "run": "cached",
+      "command": ".venv/bin/python scripts/ingest_indpensim.py",
+      "elapsed_seconds": 0.268,
+      "exit_code": 0,
+      "stdout": "{\"cache_key\": \"45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7\", \"cache_miss_reason\": null, \"manifest_path\": \"<repo>/data/processed/indpensim/manifest.json\", \"status\": \"cached\"}\n",
+      "stderr": "/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted\n",
+      "status": {
+        "cache_key": "45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7",
+        "cache_miss_reason": null,
+        "manifest_path": "<repo>/data/processed/indpensim/manifest.json",
+        "status": "cached"
+      },
+      "outputs": {
+        "batches.parquet": {
+          "sha256": "aa760562a140e033f84ab699ad4f151e51eb4ee19bb4ce5aca908a2e94dac4da",
+          "bytes": 6930,
+          "mtime_ns": 1793307851284934312
+        },
+        "manifest.json": {
+          "sha256": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+          "bytes": 11266,
+          "mtime_ns": 1793307851540909591
+        },
+        "samples.parquet": {
+          "sha256": "3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+          "bytes": 6900852,
+          "mtime_ns": 1793307851356598468
+        },
+        "variables.parquet": {
+          "sha256": "860bad3baa9c0b5c07a85d23bcf90fb83fa6bcc684b61280b96ed2c1104a5781",
+          "bytes": 4752,
+          "mtime_ns": 1793307851368689523
+        }
+      }
+    },
+    {
+      "run": "forced",
+      "command": ".venv/bin/python scripts/ingest_indpensim.py --force",
+      "elapsed_seconds": 14.898,
+      "exit_code": 0,
+      "stdout": "{\"cache_key\": \"45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7\", \"cache_miss_reason\": \"forced rebuild\", \"manifest_path\": \"<repo>/data/processed/indpensim/manifest.json\", \"status\": \"built\"}\n",
+      "stderr": "/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted\n",
+      "status": {
+        "cache_key": "45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7",
+        "cache_miss_reason": "forced rebuild",
+        "manifest_path": "<repo>/data/processed/indpensim/manifest.json",
+        "status": "built"
+      },
+      "outputs": {
+        "batches.parquet": {
+          "sha256": "aa760562a140e033f84ab699ad4f151e51eb4ee19bb4ce5aca908a2e94dac4da",
+          "bytes": 6930,
+          "mtime_ns": 1793307872517498245
+        },
+        "manifest.json": {
+          "sha256": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+          "bytes": 11266,
+          "mtime_ns": 1793307872772269102
+        },
+        "samples.parquet": {
+          "sha256": "3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+          "bytes": 6900852,
+          "mtime_ns": 1793307872589105693
+        },
+        "variables.parquet": {
+          "sha256": "860bad3baa9c0b5c07a85d23bcf90fb83fa6bcc684b61280b96ed2c1104a5781",
+          "bytes": 4752,
+          "mtime_ns": 1793307872600899246
+        }
+      }
+    }
+  ],
+  "full_data_checks": {
+    "table_rows": {
+      "batches": 100,
+      "samples": 113935,
+      "variables": 33
+    },
+    "sample_ids_unique": true,
+    "all_sample_ids_ticks_and_source_rows_checked": 113935,
+    "batch_statistics_all_values_checked": 100,
+    "first_last_process_values_compared_to_original_inspection": 6000,
+    "raw_fault_reference_ones": 1256,
+    "fault_batches": 10,
+    "process_null_counts": {
+      "aeration_rate": 0,
+      "agitator_rpm": 0,
+      "sugar_feed_rate": 0,
+      "acid_flow_rate": 0,
+      "base_flow_rate": 0,
+      "heating_cooling_water_flow_rate": 0,
+      "heating_water_flow_rate": 0,
+      "water_injection_rate": 0,
+      "air_head_pressure": 0,
+      "dumped_broth_flow": 0,
+      "substrate_concentration": 0,
+      "dissolved_oxygen": 0,
+      "penicillin_concentration": 0,
+      "vessel_volume": 0,
+      "vessel_weight": 0,
+      "ph": 0,
+      "temperature": 0,
+      "generated_heat": 0,
+      "co2_offgas": 0,
+      "paa_flow_rate": 0,
+      "paa_offline": 111873,
+      "oil_flow_rate": 0,
+      "nh3_offline": 111873,
+      "oxygen_uptake_rate": 0,
+      "o2_offgas": 0,
+      "penicillin_offline": 111873,
+      "biomass_offline": 111873,
+      "carbon_evolution_rate": 0,
+      "ammonia_shots": 0,
+      "viscosity_offline": 111873
+    },
+    "exact_arrow_schemas_and_nullability": true,
+    "variable_metadata_matches_contract": true,
+    "hashes_identical_across_all_runs": true,
+    "cached_output_mtimes_unchanged": true
+  },
+  "focused_tests": {
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "tests": 22,
+    "test_runner_seconds": 0.413,
+    "exit_code": 0,
+    "result": "OK"
+  },
+  "limitations": [
+    "Arrow CPU capability sysctl queries are denied by the sandbox; commands still exited 0.",
+    "Per-file atomic replacement with manifest-last publication is not a transactional directory swap.",
+    "Dataset semantic uncertainties remain documented in data_verification.md."
+  ],
+  "graph_query_binding_check": {
+    "backend": "Parquet field/time-window check only; no graph database",
+    "batch_ref": 91,
+    "first_flagged_time_h": 20.0,
+    "first_flagged_tick": 100,
+    "time_window_h": [
+      19.0,
+      21.0
+    ],
+    "matching_samples": 11,
+    "selected_variables": 5,
+    "expected_projection_rows": 55,
+    "first_source_row_number": 102505,
+    "last_source_row_number": 102515
+  },
+  "path_normalization": {
+    "purpose": "Portfolio portability: only the original user-specific repository path prefix was replaced with <repo>/ in status/stdout paths. Measurements, checksums, counts and elapsed times are unchanged.",
+    "replacements": 6
+  }
+}

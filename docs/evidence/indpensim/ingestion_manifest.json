@@ -1,0 +1,439 @@
+{
+  "cache_inputs": {
+    "archive_sha256": "bc434c6cf96444fee3c915d434ac84e2a9c6492be4daebcfa4aed9cdff181f00",
+    "contract_sha256": "be26f9704862035ca5bbfdfab48bb69d3e0ace1e459e1a830b51c1c951f252ac",
+    "normalizer_sha256": "306f3e7b70fefd8645a9951c2a973943f73fb7e4756c96ed160c7f09a47790d6",
+    "pyarrow_version": "21.0.0",
+    "python_version": "3.11.17"
+  },
+  "cache_key": "45f2c8f41cfe178202a53a56676d15abcaa24cf7ffba2af99ab7bc626b93cca7",
+  "contract_version": 1,
+  "dataset": {
+    "doi": "10.17632/pdnjz7zz5x.2",
+    "id": "indpensim:pdnjz7zz5x:v2",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "IndPenSim",
+    "repository_id": "pdnjz7zz5x",
+    "url": "https://data.mendeley.com/datasets/pdnjz7zz5x/2",
+    "version": 2
+  },
+  "manifest_version": 1,
+  "normalization": {
+    "batch_id_template": "{dataset_id}:batch:{batch_ref:03d}",
+    "batch_key_raw_index": 35,
+    "excluded_raw_positions_start": 37,
+    "nan_policy": "NaN to Parquet null only for offline_sparse fields; other nonfinite values fail",
+    "raw_metadata_indices": {
+      "batch_fault_flag_raw": 36,
+      "control_reference_raw": 32,
+      "fault_reference_raw": 31,
+      "metadata_33_raw": 33,
+      "metadata_34_raw": 34
+    },
+    "sample_id_template": "{batch_id}:tick:{time_tick:06d}",
+    "time_step_h": "0.2"
+  },
+  "outputs": {
+    "batches.parquet": {
+      "bytes": 6930,
+      "rows": 100,
+      "schema": [
+        {
+          "name": "dataset_id",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "batch_id",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "batch_ref",
+          "nullable": false,
+          "type": "int16"
+        },
+        {
+          "name": "source_file_id",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "source_row_number",
+          "nullable": false,
+          "type": "int32"
+        },
+        {
+          "name": "fault_present",
+          "nullable": false,
+          "type": "bool"
+        },
+        {
+          "name": "control_regime",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "harvest_during_batch_raw",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "harvest_end_of_batch_raw",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "harvest_total_raw",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "sample_count",
+          "nullable": false,
+          "type": "int32"
+        },
+        {
+          "name": "time_start_h",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "time_end_h",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "timeseries_first_source_row",
+          "nullable": false,
+          "type": "int32"
+        },
+        {
+          "name": "timeseries_last_source_row",
+          "nullable": false,
+          "type": "int32"
+        }
+      ],
+      "sha256": "aa760562a140e033f84ab699ad4f151e51eb4ee19bb4ce5aca908a2e94dac4da"
+    },
+    "samples.parquet": {
+      "bytes": 6900852,
+      "rows": 113935,
+      "schema": [
+        {
+          "name": "dataset_id",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "sample_id",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "batch_id",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "batch_ref",
+          "nullable": false,
+          "type": "int16"
+        },
+        {
+          "name": "source_file_id",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "source_row_number",
+          "nullable": false,
+          "type": "int32"
+        },
+        {
+          "name": "time_h",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "time_tick",
+          "nullable": false,
+          "type": "int32"
+        },
+        {
+          "name": "fault_reference_raw",
+          "nullable": false,
+          "type": "int8"
+        },
+        {
+          "name": "control_reference_raw",
+          "nullable": false,
+          "type": "int8"
+        },
+        {
+          "name": "metadata_33_raw",
+          "nullable": false,
+          "type": "int16"
+        },
+        {
+          "name": "metadata_34_raw",
+          "nullable": false,
+          "type": "int16"
+        },
+        {
+          "name": "batch_fault_flag_raw",
+          "nullable": false,
+          "type": "int8"
+        },
+        {
+          "name": "aeration_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "agitator_rpm",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "sugar_feed_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "acid_flow_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "base_flow_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "heating_cooling_water_flow_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "heating_water_flow_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "water_injection_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "air_head_pressure",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "dumped_broth_flow",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "substrate_concentration",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "dissolved_oxygen",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "penicillin_concentration",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "vessel_volume",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "vessel_weight",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "ph",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "temperature",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "generated_heat",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "co2_offgas",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "paa_flow_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "paa_offline",
+          "nullable": true,
+          "type": "float64"
+        },
+        {
+          "name": "oil_flow_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "nh3_offline",
+          "nullable": true,
+          "type": "float64"
+        },
+        {
+          "name": "oxygen_uptake_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "o2_offgas",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "penicillin_offline",
+          "nullable": true,
+          "type": "float64"
+        },
+        {
+          "name": "biomass_offline",
+          "nullable": true,
+          "type": "float64"
+        },
+        {
+          "name": "carbon_evolution_rate",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "ammonia_shots",
+          "nullable": false,
+          "type": "float64"
+        },
+        {
+          "name": "viscosity_offline",
+          "nullable": true,
+          "type": "float64"
+        }
+      ],
+      "sha256": "3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5"
+    },
+    "variables.parquet": {
+      "bytes": 4752,
+      "rows": 33,
+      "schema": [
+        {
+          "name": "dataset_id",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "variable_id",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "output_table",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "output_column",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "source_file_id",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "source_column_index",
+          "nullable": false,
+          "type": "int16"
+        },
+        {
+          "name": "source_header",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "unit_reported",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "unit_status",
+          "nullable": false,
+          "type": "string"
+        },
+        {
+          "name": "measurement_kind",
+          "nullable": false,
+          "type": "string"
+        }
+      ],
+      "sha256": "860bad3baa9c0b5c07a85d23bcf90fb83fa6bcc684b61280b96ed2c1104a5781"
+    }
+  },
+  "source": {
+    "archive_filename": "100_Batches_IndPenSim.zip",
+    "bytes": 503792426,
+    "members": [
+      {
+        "bytes": 3904,
+        "crc32": "5186c460",
+        "header_fields": 5,
+        "path": "Mendeley_data/100_Batches_IndPenSim_Statistics.csv",
+        "row_fields": 5,
+        "rows": 100,
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:statistics"
+      },
+      {
+        "bytes": 2566827626,
+        "crc32": "2ee2693e",
+        "header_fields": 2239,
+        "path": "Mendeley_data/100_Batches_IndPenSim_V3.csv",
+        "row_fields": 2237,
+        "rows": 113935,
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries"
+      }
+    ],
+    "sha256": "bc434c6cf96444fee3c915d434ac84e2a9c6492be4daebcfa4aed9cdff181f00"
+  },
+  "warnings": [
+    "Malformed time-series header: positions 37 onward are excluded; no repaired Raman axis is asserted.",
+    "Metadata headers are misleading; batch identity uses documented raw position 35 and other metadata stay explicitly raw.",
+    "Reported units are not independently validated; PAA, NH3, off-gas O2 and raw harvest quantities have unresolved units or aggregation.",
+    "Batch fault evidence is binary only; raw fault-reference transitions do not establish a named fault type or physical onset/clearance.",
+    "Offline assays lack separate collection and result-availability timestamps; no availability delay is reconstructed."
+  ],
+  "writer": {
+    "compression": "zstd",
+    "parquet_version": "2.6",
+    "row_group_size": 10000,
+    "use_dictionary": false,
+    "write_statistics": true
+  }
+}

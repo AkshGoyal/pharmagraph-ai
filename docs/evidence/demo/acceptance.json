@@ -1,0 +1,201 @@
+{
+  "browser": {
+    "blocker": "Computer-use tool returned: Computer Use was not approved to use Google Chrome",
+    "screenshots": [],
+    "verified": false
+  },
+  "cases": {
+    "1": {
+      "download_payload_matches_saved_verified_engine_result": true,
+      "download_payload_sha256": "fe60bf6879bfd2b84eb2926120543e30dcdf60f88b449bdb3fcbb23f486fc074",
+      "engine_calls_total": 2,
+      "finding_count": 0,
+      "state": {
+        "assessed_variable_count": 4,
+        "finding_count": 0,
+        "kind": "no_findings",
+        "message": "Assessed with no retained statistical deviation intervals. This is not proof of normal or safe operation.",
+        "skipped_tick_count": 0
+      }
+    },
+    "31": {
+      "download_payload_matches_saved_verified_engine_result": true,
+      "download_payload_sha256": "441ba54225bc4b04beadb4d9b50b7a2ea9d2661ea461f4850b38b7dff6020264",
+      "engine_calls_total": 1,
+      "finding_count": 1,
+      "finding_rerun_and_download_do_not_rerun_engine": true,
+      "graph_path": [
+        {
+          "from_id": "indpensim:pdnjz7zz5x:v2:batch:031",
+          "from_label": "Batch",
+          "relationship": "HAS_DATA",
+          "to_id": "indpensim:pdnjz7zz5x:v2:artifact:samples.parquet:sha256:3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+          "to_label": "ProcessedArtifact"
+        },
+        {
+          "from_id": "indpensim:pdnjz7zz5x:v2:variable:temperature",
+          "from_label": "Variable",
+          "relationship": "HAS_DATA",
+          "to_id": "indpensim:pdnjz7zz5x:v2:artifact:samples.parquet:sha256:3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+          "to_label": "ProcessedArtifact"
+        },
+        {
+          "from_id": "indpensim:pdnjz7zz5x:v2:variable:temperature",
+          "from_label": "Variable",
+          "relationship": "FROM_SOURCE",
+          "to_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+          "to_label": "SourceFile"
+        },
+        {
+          "from_id": "indpensim:pdnjz7zz5x:v2:artifact:samples.parquet:sha256:3479fb11c22462c396e957ed099287c2f19147649814751776d552cf5bab90d5",
+          "from_label": "ProcessedArtifact",
+          "relationship": "DERIVED_FROM",
+          "to_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+          "to_label": "SourceFile"
+        }
+      ],
+      "source_trace": {
+        "batch_id": "indpensim:pdnjz7zz5x:v2:batch:031",
+        "deviation_score": 13.152569809805108,
+        "observed_value": 298.38,
+        "peer_count": 29,
+        "reference_mad": 0.01999999999998181,
+        "reference_median": 297.99,
+        "reference_spread": 0.02965199999997303,
+        "sample_id": "indpensim:pdnjz7zz5x:v2:batch:031:tick:000430",
+        "source_column_index": 17,
+        "source_file_id": "indpensim:pdnjz7zz5x:v2:timeseries",
+        "source_header": "Temperature(T:K)",
+        "source_row_number": 34755,
+        "time_h": 86.0,
+        "time_tick": 430
+      },
+      "state": {
+        "assessed_variable_count": 4,
+        "finding_count": 1,
+        "kind": "findings",
+        "message": "1 retained statistical deviation interval. These are derived comparisons of published simulation measurements.",
+        "skipped_tick_count": 400
+      }
+    },
+    "91": {
+      "download_payload_matches_saved_verified_engine_result": true,
+      "download_payload_sha256": "877843ce545652e0bb6b7ee7762ca8c8734c0a73a840d5bfbc867dd359ac942e",
+      "engine_calls_total": 3,
+      "finding_count": 0,
+      "state": {
+        "assessed_variable_count": 0,
+        "finding_count": 0,
+        "kind": "undocumented",
+        "message": "Not assessed: process compatibility is undocumented for this batch, so no compatible reference cohort was assigned.",
+        "skipped_tick_count": 5160
+      }
+    }
+  },
+  "cli_download_comparison": {
+    "byte_identical_payload": true,
+    "command": ".venv/bin/python scripts/investigate_batch.py --batch-id indpensim:pdnjz7zz5x:v2:batch:031 --output /private/tmp/pharmagraph_demo_engine031.json",
+    "exit_code": 0
+  },
+  "code_sha256": {
+    ".streamlit/config.toml": "4870e96aeec2e339cf8dd488dc5eb3fd5ca122a3fa5835141551aaac832069d5",
+    "app.py": "9e48279de5ca77761cbe3ac74a0a4d3521576ac9a87eda914bcb2206a5b6dce0",
+    "requirements.txt": "197b4f8697c6ad8a2681f9dc8e6a32963defc5ef76abf9fd2778a50e83dcf231",
+    "scripts/demo.py": "cf96962b3e0eb76d38502a48f487e778975a0c2165b583db37e1f0213169152c",
+    "tests/test_demo.py": "d516b0a77fd641dd425815aa0ab33b1d10284d3899950652616cfb93f8ca7b72",
+    "tests/test_demo_integration.py": "9f9efaebba4d71e7741ea799a761600c6abb77e4e8df32a41a31be9637cd7e3e"
+  },
+  "failure_checks": {
+    "actual_graph_manifest_mismatch": {
+      "messages": [
+        "The graph and processed artifacts are incompatible or incomplete. Restore the verified dataset and reload its matching graph."
+      ],
+      "no_raw_exception": true
+    },
+    "actual_missing_artifacts": {
+      "messages": [
+        "Processed data are missing. Restore the verified manifest and three Parquet files, then reload the matching graph."
+      ],
+      "no_raw_exception": true
+    },
+    "real_connection_refusal": {
+      "messages": [
+        "Neo4j is unavailable or credentials were rejected. Start the local Neo4j service and check the server-side NEO4J settings."
+      ],
+      "no_raw_exception": true
+    }
+  },
+  "http_frontend": {
+    "bytes": 6467,
+    "status": 200
+  },
+  "http_health": {
+    "body": "ok",
+    "status": 200
+  },
+  "initial": {
+    "automatic_investigation_calls": 0,
+    "batch_options": 100,
+    "plotly_charts": 4,
+    "selected_label": "Batch 031"
+  },
+  "launch_command": ".venv/bin/python -m streamlit run app.py --server.address 127.0.0.1 --server.port 8501 --server.headless true --browser.gatherUsageStats false",
+  "production_counts_after": {
+    "nodes": {
+      "Batch": 100,
+      "Dataset": 1,
+      "FaultAnnotation": 100,
+      "ProcessedArtifact": 3,
+      "SourceFile": 2,
+      "Variable": 33
+    },
+    "relationships": {
+      "DERIVED_FROM": 4,
+      "FROM_SOURCE": 233,
+      "HAS_ANNOTATION": 100,
+      "HAS_ARTIFACT": 3,
+      "HAS_BATCH": 100,
+      "HAS_DATA": 233,
+      "HAS_SOURCE": 2,
+      "HAS_VARIABLE": 33
+    },
+    "total_nodes": 239,
+    "total_relationships": 708
+  },
+  "remaining_unverified": [
+    "Browser-rendered visual layout and Plotly interactions",
+    "Actual browser-triggered JSON file save",
+    "Screenshots due denied Chrome computer-use permission",
+    "Docker container restart and named-volume persistence"
+  ],
+  "tests": {
+    "command": "PHARMAGRAPH_NEO4J_INTEGRATION=1 .venv/bin/python -m unittest discover -s tests -v",
+    "elapsed_s": 18.411,
+    "existing_regressions": 72,
+    "exit_code": 0,
+    "new_live_framework_data_tests": 6,
+    "new_presentation_error_cache_tests": 11,
+    "passed": 89,
+    "skipped": 0,
+    "total": 89
+  },
+  "unchanged_existing_modules_and_processed_manifest": {
+    "config/indpensim_contract.json": "be26f9704862035ca5bbfdfab48bb69d3e0ace1e459e1a830b51c1c951f252ac",
+    "data/processed/indpensim/manifest.json": "5f5d6f0b4c552fcaeae9834bd8216c9d67e6dd407b398c1a9b2805cbca7d6e63",
+    "scripts/graph.py": "f77f33ee9ea1f8fba71643449ac22f439f9b1933dc5321c736f754bf714869ab",
+    "scripts/ingest_indpensim.py": "306f3e7b70fefd8645a9951c2a973943f73fb7e4756c96ed160c7f09a47790d6",
+    "scripts/investigate_batch.py": "0bc2936db20824f830777d15662b50555baefe22e64f9e62b6d0fa5f3b56aa40",
+    "scripts/investigation.py": "f144df50cb3c68f6d07481254e1c0051213c9bf7aabb99b21c42ac756fe56f5d",
+    "scripts/load_graph.py": "0afa4b657fbccd472d94d8b1cf75756476a46d3546186747fed82414efdd5791",
+    "scripts/query_graph.py": "c6b811d76df5224c10ff9ebf2ab64889e8750dea63759dc8c60e1f6c99397a82"
+  },
+  "url": "http://127.0.0.1:8501",
+  "verification_kind": "Actual Neo4j and processed data through Streamlit AppTest plus HTTP server checks; no browser verification",
+  "versions": {
+    "neo4j_driver": "5.28.2",
+    "plotly": "7.1.0",
+    "pyarrow": "21.0.0",
+    "python": "3.11.17",
+    "streamlit": "1.66.1"
+  }
+}

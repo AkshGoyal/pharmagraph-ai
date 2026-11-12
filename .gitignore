@@ -1,0 +1,40 @@
+# Original research downloads stay local; the verification report and manifest are tracked.
+/data/raw/
+/data/processed/
+/.venv/
+/.env
+/.env.*
+!/.env.example
+/data/neo4j/
+/data/investigations/
+/data/runtime/
+/artifacts/video/
+/.local/
+/.aws/
+/.neo4j/
+/.streamlit/secrets.toml
+# Local source downloads, database exports and private key material.
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.parquet
+*.dump
+*.sqlite
+*.sqlite3
+*.pem
+*.key
+*.p12
+*.pfx
+/docs/evidence/indpensim/*.pdf
+/docs/evidence/indpensim/*.png
+/docs/evidence/indpensim/*.ipynb
+/docs/evidence/indpensim/*.html
+/docs/evidence/indpensim/page_script.txt
+/docs/evidence/indpensim/paper_text.txt
+/docs/evidence/indpensim/*_headers.txt
+__pycache__/
+.DS_Store
+# Not needed to run the project: lesson videos and the compiled macOS launcher binary.
+/docs/video/
+/PharmaGraph.app/

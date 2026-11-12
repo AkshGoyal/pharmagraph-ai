@@ -1,0 +1,32 @@
+PharmaGraph
+Published simulation trends
+Derived investigation
+Interval evidence
+Verified graph provenance
+Published simulation evidence · derived statistical investigation
+1,250 stored observations · elapsed 0.2–250 h · source-reported units; no conversion or imputation
+The shaded reference envelope is peer median ± threshold × reference spread. It is a statistical reference, not an operating specification or confidence interval. The highlighted band marks the retained interval; unscoreable reference points remain gaps.
+Observed values are published simulation measurements. Reference medians, spreads and scores are derived.
+Directed relationships read from the current Neo4j graph for this batch, variable, artifact and source.
+Compatibility metadata is used only to select peers. It is not a detector feature.
+Cohort exclusions
+Inspect batch trajectories, compare compatible elapsed-time peers, and trace a retained interval to its source records.
+aeration_rate
+sugar_feed_rate
+ph
+temperature
+At each observed elapsed-time tick, compare the published simulation value with the median of compatible peers. Reference spread is 1.4826 × median absolute deviation (MAD).
+Defaults: at least 10 finite peers per tick; deviation score strictly greater than 6; at least 5 consecutive observations in the same direction. Five observations span 0.8 h between endpoints.
+Intervals rank by mean point deviation score, then peak score, configured variable order and start tick. The target batch is always excluded. Missing or unscoreable ticks break runs; no values are filled or extrapolated.
+Eligible cohort: 29 batches · compatibility group: operator_controlled
+Target exclusion
+• Compatibility uses published control-regime grouping only; it does not establish identical recipes, conditions or process phases.
+• Peer batches may contain atypical behavior; no annotation-based filtering or clean-reference guarantee is applied.
+• Equal elapsed-time ticks do not establish biological or process-phase alignment between batches.
+• Deviation scores and thresholds are descriptive heuristics with no calibrated accuracy, probability or severity interpretation.
+• Insufficient finite peer coverage and zero-MAD differences are unscorable; missing values break runs without imputation.
+• Selection is limited to aeration_rate, sugar_feed_rate, ph and temperature; unselected channels are not assessed.
+• Values are published simulation measurements with source-reported units; units and physical plant behavior are not independently validated.
+• Derived intervals do not establish a named fault, root cause, causal relationship, quality decision or operating specification.
+1 retained statistical deviation interval. These are derived comparisons of published simulation measurements.
+Coverage is partial: 400 variable/tick assessments were skipped or unscoreable. Review compatibility, finite-peer coverage and zero-MAD diagnostics below.
